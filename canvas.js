@@ -3,8 +3,8 @@ window.addEventListener('load', () => {
   const ctx = canvas.getContext('2d');
 
   //Resizing
-  canvas.height = window.innerHeight;
-  canvas.width = window.innerWidth;
+  canvas.height = '692';
+  canvas.width = '800';
 
   /////////////////////// x,y,width,height
 
@@ -39,16 +39,23 @@ window.addEventListener('load', () => {
     ctx.beginPath();
   }
 
+  //   const gray = document.querySelector('.gray');
+
   function draw(e) {
     if (!painting) return;
     ctx.lineWidth = 10;
     ctx.lineCap = 'round';
-    ctx.strokeStyle = 'yellow';
+    ctx.strokeStyle = 'gray';
 
     ctx.lineTo(e.clientX, e.clientY);
     ctx.stroke();
     ctx.beginPath();
     ctx.moveTo(e.clientX, e.clientY);
+
+    // gray.addEventListener('click', () => {
+    //   console.log('dd');
+    //   ctx.strokeStyle = 'gray';
+    // });
   }
 
   //Eventlistners

@@ -4,6 +4,31 @@
   box-sizing: border-box;
 }
 
+body {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
 #canvas {
-  border: 2px solid #3a3a3a83;
+  border: 5px solid #f1cd0083;
+}
+
+#canvas {
+  background-image: url(./img/renkyun.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.color-change {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: gray;
+  border: 3px solid rgb(61, 61, 61);
+}
+
+.color-change.yellow {
+  background-color: yellow;
 }
